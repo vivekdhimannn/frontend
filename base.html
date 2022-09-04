@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -18,8 +19,9 @@
         <a href="#"> Products</a>
         <a href="#"> Navigation</a>
         <a href="gallery.html"> Gallary</a>
-        <a href="purchase.html"> Register</a>
+        <a href="purchase.html" class="right"> Register/login</a>
     </nav>
+    <br>
     <iframe width="880" height="315" src="https://www.youtube.com/embed/DB3Vn56TTk0" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -28,11 +30,11 @@
         allowfullscreen></iframe><br>
     <br>
     <br>
-    <h2>
-        Our Recent Uploaded Art
+    <h2 class="heading">
+        <span>Our Recent Uploaded Art</span>
     </h2>
 
-    <section>
+    <div class="Flex-Container">
         <div class="image">
             <a target="_blank" href="https://source.unsplash.com/random/1920 x 1080?sig=1">
                 <img src="https://source.unsplash.com/random/800x480?sig=3" alt="error" width="386">
@@ -140,7 +142,19 @@
             </a>
 
         </div>
-    </section>
+        <div class="image">
+            <a target="_blank" href="https://source.unsplash.com/random/1920 x 1080?sig=1">
+                <img src="https://source.unsplash.com/random/800x480?sig=19" alt="error">
+            </a>
+
+        </div>
+        <div class="image">
+            <a target="_blank" href="https://source.unsplash.com/random/1920 x 1080?sig=1">
+                <img src="https://source.unsplash.com/random/800x480?sig=20" alt="error">
+            </a>
+
+        </div>
+    </div>
     <br>
     <br>
     <main>
@@ -148,9 +162,11 @@
             <h2>Our Founder</h2>
             <img src="img/A93F4DBB-9B20-4701-A732-AC9AF48B10CF.jpg" alt="none" width="230">
             <h3>Vivek Dhiman</h3>
-            <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <div class="links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play" style="font-size:36px;color:red"></i> YouTube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square" style="font-size:36px; color:blue"></i>LinkedIn</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" style="font-size:36px;color:red;"></i> Instagram</a>
+            </div>
 
             <h4>Young TEDx speaker and #1 Online JEE Educator | Founder of 5 YouTube Channels with 2.5 million young
                 hustlers. </h4>
