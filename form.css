@@ -49,8 +49,11 @@ h2 {
     font-family: cursive;
     padding: 20px;
     color: white;
+    clear: both;
 }
 .container{
+    clear: both;
+    display: flex;
     background-color: rgb(65, 65, 65);
     margin: 90px;
     align-content: center;
@@ -60,6 +63,7 @@ h2 {
     border-radius: 25px;
 }
 form{
+    clear: both;
     font-family: cursive;
     width: 100%;
 }
@@ -86,16 +90,16 @@ footer a {
     float: left;
     color: white;
 }
-input[type="button"]{
+button{
     background-color: aqua;
     border: none;
-    height: 40px;
-    width: 350px;
-    align-content: center;
+    clear: both;
+    height: 5vh;
+    width: 30vw;
     border-radius: 10px;
     cursor: pointer;
 }
-input[type="button"]:hover{
+button:hover{
     background-color: darkturquoise;
     transition: 500ms;
 }

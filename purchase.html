@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="form.css">
+    <script src="jslearning/1.js"></script>
 </head>
 
 <body>
@@ -20,8 +21,10 @@
         <a href="gallery.html"> Gallary</a>
         <a href="#"> Register</a>
     </nav>
+    <h2>To purchase item please fill in the form</h2>
     <div class="container">
-        <h2>To purchase item please fill in the form</h2>
+
+        <br>
         <form action="input">
             <label for="Name"> *Name: </label>
             <div>
@@ -65,9 +68,7 @@
             <div>
                 <input type="number" name="Name" id="" maxlength="3" required>
             </div> <br>
-            <div>
-                <input type="button" value="Pay now" height="15" width="25">
-            </div>
+            <button name="PayNow" type="submit" id="bn" onclick="onClick()">Pay now</button>
         </form>
     </div>
     <footer>
