@@ -25,7 +25,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 5px 1px rgba(14, 13, 13, 0.889);
+    box-shadow: 0 15px 20px rgba(14, 13, 13, 0.889);
 }
 .innerboxes{
     background-color: black;
@@ -36,9 +36,10 @@ main{
     width: 100px;
     color: antiquewhite;
     text-align: center;
-    box-shadow: 0 0 3px 0.6px rgb(21, 4, 17);
+    box-shadow:  0 15px 20px rgb(21, 4, 17);
+    overflow: hidden;
 }
-.date{
+.date_input{
     border: none;
     width: 90%;
     height: 90%;
@@ -53,7 +54,7 @@ h1{
     font-size: 3rem;
     text-shadow: 3px 1px rgb(44, 43, 43);
 }
-.year, .month, .day{
+.year, .month, .date{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 4rem;
     padding: 0px;
