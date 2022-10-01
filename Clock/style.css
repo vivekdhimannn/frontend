@@ -1,0 +1,49 @@
+html, body {
+    margin: 0px;
+    height:100%
+  }
+  .text{
+    color: white;
+    font-size: xx-large;
+    font-family:'Orbitron', sans-serif;
+    padding-left: 390px;
+    margin: 143px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    font-style: bold;
+  }
+  #2{
+    background: url("src/IG.jpg");
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  @font-face{
+   font-family:'digital-clock-font';
+   src: url('src/digital-7.regular.ttf');
+  }
+  .carousel-item{
+    object-fit: fit;
+    object-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  img{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  }
+  h1{
+    background: linear-gradient(#1c1c1c,#000a02);
+    border: 10px solid #46464e;
+    box-shadow: 2px 2px solid black;
+    border-radius: 50px;
+    padding: 80px 100px;
+    text-align: center;
+    font-family: 'digital-clock-font';
+    align-content: center;
+    justify-content: center;
+    color: #00ff62;
+    margin: 140px;
+  }
