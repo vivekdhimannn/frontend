@@ -6,7 +6,7 @@ export default function App() {
     color: "Black",
     backgroundColor: 'White'
 })
- const [btnText, setBtnText] = useState('DarkMode')
+ const [btnText, setBtnText] = useState('DarkMode Off')
  const [navMode, setNavMode] = useState("navbar navbar-expand-lg bg-primary")
 
   let toggle = ()=>{
@@ -16,27 +16,30 @@ export default function App() {
           background: '#121211'
       });
       document.body.style.backgroundColor = '#121211';
-      setBtnText('LightMode')
+      document.getElementById('exampleFormControlTextarea1').style.backgroundColor = '#252625';
+      document.getElementById('exampleFormControlTextarea1').style.color = 'white';
+      setBtnText('DarkMode On')
       setNavMode("navbar navbar-expand-lg bg-dark")
-      
     }
     else {
       setStyle({
         color: "Black",
         background: 'White'
     });
-    setBtnText('DarkMode')
+    setBtnText('DarkMode Off')
     setNavMode("navbar navbar-expand-lg bg-primary")
     document.body.style.backgroundColor = 'white';
+    document.getElementById('exampleFormControlTextarea1').style.backgroundColor = 'white';
+    document.getElementById('exampleFormControlTextarea1').style.color = 'black';
   }
 }
   return (
     <>
     <div style={myStyle}>
-      <nav className={navMode} style={myStyle} color="white">
+      <nav className={navMode} color="white">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Text Editor
+          <i className="bi bi-card-text"></i> Text Editor
           </a>
           <button
             className="navbar-toggler"
@@ -50,17 +53,9 @@ export default function App() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  About
-                </a>
-              </li>
+              
             </ul>
             <form className="d-flex" role="search">
               <div className="form-check form-switch mx-2" onClick = {toggle}>
