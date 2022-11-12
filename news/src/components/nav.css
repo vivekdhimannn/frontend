@@ -1,0 +1,29 @@
+body{
+  box-sizing: border-box;
+  margin: 0px;
+}
+.sticky {
+    height: 70px;
+    position: sticky;
+    top: 0px; /* When the element reaches top: 10px, it becomes fixed. */
+    z-index: 100;
+  }
+  .nav-item:hover{
+background-color: rgb(99, 99, 99);
+transition: 500ms;
+border-radius: 30px;
+  }
+  .nav-item{
+    margin-left: 10px;
+  }
+  .navbar{
+    background-color: black;
+  }
+  @media screen and (max-width:500px){
+    .navbar{
+      box-sizing: content-box;
+    }
+    .nav-item{
+      margin-left: 2px;
+    }
+  }
